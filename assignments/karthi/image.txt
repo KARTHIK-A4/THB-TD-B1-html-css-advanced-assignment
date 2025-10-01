@@ -1,0 +1,27 @@
+<!-- Basic image -->
+<img src="photo.jpg" alt="Description of the image" width="400" height="300">
+<!-- Responsive image with srcset -->
+<img src="small.jpg"
+srcset="small.jpg 400w,
+medium.jpg 800w,
+large.jpg 1200w,
+xlarge.jpg 1600w"
+sizes="(max-width: 400px) 100vw,
+(max-width: 800px) 50vw,
+(max-width: 1200px) 33vw,
+25vw"
+alt="Responsive landscape photo"
+loading="lazy">
+<!-- Picture element for art direction -->
+<picture>
+<source media="(min-width: 800px)" srcset="wide-image.jpg">
+<source media="(min-width: 400px)" srcset="medium-image.jpg">
+<img src="narrow-image.jpg" alt="Adaptive image">
+</picture>
+<!-- Figure with caption -->
+<figure>
+<img src="chart.png" alt="Sales growth chart showing 25% increase">
+<figcaption>
+<strong>Figure 1:</strong> Sales growth over the last quarter
+</figcaption>
+</figure>
